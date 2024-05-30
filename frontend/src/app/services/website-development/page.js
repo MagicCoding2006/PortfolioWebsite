@@ -5,7 +5,11 @@ import React from "react";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import WebDevImage from '../../../../public/WebsiteDev.png';
-import CalendlyInline from "@/app/components/CalendlyInline";
+import dynamic from 'next/dynamic';
+
+const CalendlyInline = dynamic(() => import('../../components/CalendlyInline'), {
+  ssr: false,
+});
 
 export default function WebsiteDevelopment() {
     return (

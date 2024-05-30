@@ -5,7 +5,11 @@ import React from "react";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import SEOImage from '../../../../public/SEO.png';
-import CalendlyInline from "@/app/components/CalendlyInline";
+import dynamic from 'next/dynamic';
+
+const CalendlyInline = dynamic(() => import('../../components/CalendlyInline'), {
+  ssr: false,
+});
 
 export default function SEO() {
     return (
@@ -28,7 +32,7 @@ export default function SEO() {
                     <div className="flex-1 text-left">
                         <h3 className="text-2xl font-bold text-red-600 mb-4">Enhance Your Online Presence</h3>
                         <p className="text-lg mb-4">
-                            In today's digital age, having a robust online presence is crucial for the success of any business. Our Local/Global SEO services are designed to improve your website's visibility and help you reach a broader audience. Whether you're targeting a local market or aiming to expand globally, our tailored SEO strategies can help you achieve your goals.
+                            In today&apos;s digital age, having a robust online presence is crucial for the success of any business. Our Local/Global SEO services are designed to improve your website&apos;s visibility and help you reach a broader audience. Whether you&apos;re targeting a local market or aiming to expand globally, our tailored SEO strategies can help you achieve your goals.
                         </p>
                     </div>
                 </div>
@@ -70,7 +74,7 @@ export default function SEO() {
                     <ul className="list-none pl-0 mb-8">
                         <li className="text-lg mb-2"><b>Proven Results:</b> Our SEO strategies have helped numerous businesses improve their search engine rankings and drive organic traffic.</li>
                         <li className="text-lg mb-2"><b>Tailored Solutions:</b> We customize our SEO services to meet your specific needs and objectives.</li>
-                        <li className="text-lg mb-2"><b>Transparent Reporting:</b> Regular reports that track your website's performance and the progress of our SEO efforts.</li>
+                        <li className="text-lg mb-2"><b>Transparent Reporting:</b> Regular reports that track your website&apos;s performance and the progress of our SEO efforts.</li>
                     </ul>
                     <h3 className="text-2xl font-bold text-red-600 mb-4">Get Started Today</h3>
                     <p className="text-lg mb-8">

@@ -1,6 +1,10 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import CalendlyInline from "../components/CalendlyInline";
+import dynamic from 'next/dynamic';
+
+const CalendlyInline = dynamic(() => import('../components/CalendlyInline'), {
+  ssr: false,
+});
 
 export default function About() {
     return (
@@ -14,7 +18,7 @@ export default function About() {
                     <div style={contentItemStyle}>
                         <h3 style={subtitleStyle}>Our Mission</h3>
                         <p style={textStyle}>
-                            Our mission is simple: to provide top-quality digital solutions that drive success for our clients. We believe in the power of technology to transform businesses and create opportunities for growth. Whether you're a small business looking to establish an online presence or a large corporation seeking to optimize your digital strategy, we are here to help you every step of the way.
+                            Our mission is simple: to provide top-quality digital solutions that drive success for our clients. We believe in the power of technology to transform businesses and create opportunities for growth. Whether you&apos;re a small business looking to establish an online presence or a large corporation seeking to optimize your digital strategy, we are here to help you every step of the way.
                         </p>
                     </div>
                     <div style={contentItemStyle}>
@@ -44,7 +48,7 @@ export default function About() {
                                 <strong>Proven Results:</strong> Our track record speaks for itself. We have helped numerous businesses achieve their digital goals and drive success through our comprehensive services.
                             </li>
                             <li style={listItemStyle}>
-                                <strong>Ongoing Support:</strong> Our commitment to you doesn't end with the completion of your project. We offer ongoing support and maintenance to ensure that your digital solutions continue to perform optimally.
+                                <strong>Ongoing Support:</strong> Our commitment to you doesn&apos;t end with the completion of your project. We offer ongoing support and maintenance to ensure that your digital solutions continue to perform optimally.
                             </li>
                         </ul>
                     </div>
@@ -52,7 +56,7 @@ export default function About() {
                     <div style={contentItemStyle}>
                         <h3 style={subtitleStyle}>Get in Touch</h3>
                         <p style={textStyle}>
-                            We would love to hear from you! Whether you have a question about our services or you're ready to start a new project, our team is here to help. Contact us today to learn more about how we can support your business.
+                            We would love to hear from you! Whether you have a question about our services or you&apos;re ready to start a new project, our team is here to help. Contact us today to learn more about how we can support your business.
                         </p>
                         <p style={contactDetailStyle}>Phone: +1(317)789-5564</p>
                         <p style={contactDetailStyle}>Email: alexlotkov124@gmail.com</p>

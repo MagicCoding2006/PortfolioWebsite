@@ -3,7 +3,11 @@
 import React from "react";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
-import CalendlyInline from "@/app/components/CalendlyInline";
+import dynamic from 'next/dynamic';
+
+const CalendlyInline = dynamic(() => import('../../components/CalendlyInline'), {
+  ssr: false,
+});
 
 export default function AppDevelopment() {
     return (
@@ -17,7 +21,7 @@ export default function AppDevelopment() {
                     <div className="mb-8">
                         <h3 className="text-2xl font-bold text-red-600 mb-4">Comprehensive App Development Services</h3>
                         <p className="text-lg mb-4">
-                            In today's digital age, having a mobile application is essential for businesses of all sizes. Whether you're a large corporation or a small business, our Fullstack App Development services are designed to create seamless, high-quality applications that meet your specific needs and help you connect with your audience.
+                            In today&apos;s digital age, having a mobile application is essential for businesses of all sizes. Whether you&apos;re a large corporation or a small business, our Fullstack App Development services are designed to create seamless, high-quality applications that meet your specific needs and help you connect with your audience.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -39,7 +43,7 @@ export default function AppDevelopment() {
                         />
                         <ServiceCard
                             title="Maintenance and Support"
-                            description="Our commitment to your success doesn't end with the launch of your app. We provide ongoing maintenance and support to ensure that your app continues to perform optimally and stays up-to-date with the latest technology trends."
+                            description="Our commitment to your success does not end with the launch of your app. We provide ongoing maintenance and support to ensure that your app continues to perform optimally and stays up-to-date with the latest technology trends."
                         />
                     </div>
                     <CalendlyInline />

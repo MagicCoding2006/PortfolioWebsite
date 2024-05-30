@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -18,10 +19,10 @@ export default function Footer() {
                     <h3 style={footerTitleStyle}>Follow Me</h3>
                     <div style={socialLinksStyle}>
                         <Link href="https://www.linkedin.com/in/alex-lotkov-0b0948243">
-                            <img src="https://i.pinimg.com/564x/49/32/80/49328097f84b5b6d80ffe0c104e4f429.jpg" alt="LinkedIn" style={socialIconStyle} />
+                            <Image src="https://i.pinimg.com/564x/49/32/80/49328097f84b5b6d80ffe0c104e4f429.jpg" alt="LinkedIn" width={30} height={30} style={socialIconStyle} />
                         </Link>
                         <Link href="https://github.com/Iamthegreatestofalltime?tab=repositories">
-                            <img src="https://i.pinimg.com/564x/cf/5f/7d/cf5f7dca8d30d52a39f4043f3796d7f0.jpg" alt="GitHub" style={socialIconStyle} />
+                            <Image src="https://i.pinimg.com/564x/cf/5f/7d/cf5f7dca8d30d52a39f4043f3796d7f0.jpg" alt="GitHub" width={30} height={30} style={socialIconStyle} />
                         </Link>
                     </div>
                 </div>

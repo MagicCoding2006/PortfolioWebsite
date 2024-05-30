@@ -44,7 +44,7 @@ export default function Projects() {
                         className="rounded-md mb-4"
                     />
                     <h3 className="text-xl font-bold mb-2">Coffee Shop Website</h3>
-                    <p>A stylish and modern website for a coffee shop, featuring an online menu, ordering system, and information about the shop's locations and special events.</p>
+                    <p>A stylish and modern website for a coffee shop, featuring an online menu, ordering system, and information about the shop&apos;s locations and special events.</p>
                 </div>
                 <div className="p-4 rounded-lg shadow-md" style={{backgroundColor: '#1D1D1D'}}>
                     <Image
