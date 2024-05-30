@@ -15,7 +15,7 @@ export default function Hero() {
                     <button className='bg-red-600 w-full lg:w-96 py-2 px-4 rounded-md text-white font-bold shadow-md hover:bg-red-700 transition-colors duration-300'>About Me</button>
                 </Link>
             </div>
-            <div className="flex-1 flex justify-center items-center animate-slideFadeInRight">
+            <div className="flex-1 flex justify-center items-center animate-slideFadeInRight mt-8 lg:mt-0">
                 <Image
                     src={Selfie}
                     alt="Hero Image"
