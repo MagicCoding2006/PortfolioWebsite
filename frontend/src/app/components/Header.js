@@ -41,7 +41,7 @@ export default function Header() {
                     <p className="text-white text-lg font-bold cursor-pointer transition-colors duration-300 hover:text-red-500">Contact</p>
                 </Link>
             </nav>
-            <button onClick={toggleMenu} className="md:hidden text-white focus:outline-none">
+            <button onClick={toggleMenu} className="md:hidden text-white focus:outline-none text-3xl">
                 ☰
             </button>
             <div className={`fixed inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center transform transition-transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} z-40`}>
