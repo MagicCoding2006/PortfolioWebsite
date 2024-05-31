@@ -23,7 +23,7 @@ export default function Services() {
     }, []);
 
     return (
-        <section className="flex flex-col justify-center items-center p-8 text-white mt-32 md:mt-48 lg:mt-0" style={{ backgroundColor: '#0C0C0C' }}>
+        <section className="flex flex-col justify-center items-center p-8 text-white mt-40 md:mt-48 lg:mt-0" style={{ backgroundColor: '#0C0C0C' }}>
             <h2 className="text-3xl font-bold mb-8 text-red-600">Our Services</h2>
             <div ref={serviceContainerRef} className="service-container grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
                 <div className="service-item">

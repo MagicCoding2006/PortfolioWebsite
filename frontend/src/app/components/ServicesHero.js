@@ -53,7 +53,7 @@ export default function ServicesHero() {
     };
 
     return (
-        <section className="flex flex-col justify-center items-center w-full h-[70vh] md:h-screen text-white overflow-hidden relative md:pt-16 mt-20" style={{backgroundColor: '#0F0F0F', zIndex: 10}}>
+        <section className="flex flex-col justify-center items-center w-full h-[89vh] md:h-screen text-white overflow-hidden relative md:pt-16 mt-20" style={{backgroundColor: '#0F0F0F', zIndex: 10}}>
             <div ref={containerRef} className="flex justify-center items-center w-full h-full relative mb-20">
                 {services.map((service, index) => (
                     <div
@@ -82,7 +82,7 @@ export default function ServicesHero() {
                 {services.map((_, index) => (
                     <div
                         key={index}
-                        className={`w-4 h-4 rounded-full cursor-pointer transition-colors duration-300 ${index === activeIndex ? "bg-red-600" : "bg-gray-600"}`}
+                        className={`w-16 h-4 rounded-full cursor-pointer transition-colors duration-300 ${index === activeIndex ? "bg-red-600" : "bg-gray-600"}`}
                         onClick={() => handleDotClick(index)}
                     ></div>
                 ))}
