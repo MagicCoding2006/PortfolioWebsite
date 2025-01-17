@@ -11,8 +11,8 @@ export default function Hero() {
                 <h1 className="text-4xl lg:text-6xl font-bold mb-4 text-shadow">👋 Hello, I&apos;m <b className='text-red-600'>Alex</b></h1>
                 <h2 className="text-2xl lg:text-3xl mb-4 text-red-600">Developer</h2>
                 <p className="text-lg lg:text-xl mb-8 max-w-lg">With a passion for creating visually stunning and user-friendly designs, I specialize in Local/Global SEO, Fullstack Website Development, and Fullstack App Development. My goal is to help businesses elevate their online presence through innovative and effective digital solutions.</p>
-                <Link href="/about">
-                    <button className='bg-red-600 w-full lg:w-96 py-2 px-4 rounded-md text-white font-bold shadow-md hover:bg-red-700 transition-colors duration-300'>About Me</button>
+                <Link href="/portfolio">
+                    <button className='bg-red-600 w-full lg:w-96 py-2 px-4 rounded-md text-white font-bold shadow-md hover:bg-red-700 transition-colors duration-300'>Portfolio</button>
                 </Link>
             </div>
             <div className="flex-1 flex justify-center items-center animate-slideFadeInRight mt-8 lg:mt-0">

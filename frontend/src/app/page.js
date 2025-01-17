@@ -16,9 +16,7 @@ export default function Home() {
     <div className="bg-black min-h-screen w-full">
       <Header/>
       <Hero/>
-      <Services/>
       <Projects/>
-      <CalendlyInline />
       <Skills/>
       <Footer/>
     </div>

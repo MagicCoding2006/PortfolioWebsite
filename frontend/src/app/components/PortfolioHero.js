@@ -3,9 +3,9 @@
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import MindfulnessZoneBanner from '../../../public/MindfulnessZoneBanner.png';
-import CoffeeSite from '../../../public/CoffeeSite.png';
-import Sponsorfy from '../../../public/Sponsorfy.png';
-import CryptoImage from '../../../public/CryptoSite.png';
+import CallAnalyzer from '../../../public/CallAnalyzer.png';
+import AITravelApp from '../../../public/AITravelApp.png';
+import RAGimg from '../../../public/RAGimg.png';
 
 export default function PortfolioHero() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -20,21 +20,21 @@ export default function PortfolioHero() {
         },
         {
             id: 2,
-            title: "Coffee Shop Site",
-            description: "This is a design and website I created for Coffee Shops",
-            image: CoffeeSite,
+            title: "AI Call Analyzer",
+            description: "A specialized AI-powered SaaS designed to enhance the performance of Sales Development Representatives (SDRs) by analyzing their calls and identifying areas for improvement. The platform also includes robust management features for team leads to oversee and optimize SDR performance. The solution is hosted securely in the cloud via Google Cloud Run (GCR).",
+            image: CallAnalyzer,
         },
         {
             id: 3,
-            title: "Crypto Transfer Site",
-            description: "Crypto transfering site to trade funds with friends",
-            image: CryptoImage,
+            title: "Travel Planning App Powered By AI",
+            description: "An innovative travel application that integrates multiple tools to streamline the vacation booking process, reducing it to under 10 minutes. Leveraging web scraping, along with APIs for flights, hotels, and Google Console, this app provides a seamless and efficient booking experience.",
+            image: AITravelApp,
         },
         {
             id: 4,
-            title: "Sponsorfy a design project",
-            description: "UI styling",
-            image: Sponsorfy,
+            title: "AI Social Media Assistant",
+            description: "An advanced SaaS solution that employs web scraping to aggregate content from your social media accounts. The platform downloads videos, analyzes them frame by frame, examines engagement metrics and transcripts, and leverages Retrieval-Augmented Generation (RAG) with a Large Language Model (LLM) to facilitate interactive insights and suggestions based on your content.",
+            image: RAGimg,
         }
     ];
 

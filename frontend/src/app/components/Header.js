@@ -28,17 +28,8 @@ export default function Header() {
                 <Link href="/">
                     <p className="text-white text-lg font-bold cursor-pointer transition-colors duration-300 hover:text-red-500">Home</p>
                 </Link>
-                <Link href="/services">
-                    <p className="text-white text-lg font-bold cursor-pointer transition-colors duration-300 hover:text-red-500">Services</p>
-                </Link>
-                <Link href="/about">
-                    <p className="text-white text-lg font-bold cursor-pointer transition-colors duration-300 hover:text-red-500">About</p>
-                </Link>
                 <Link href="/portfolio">
                     <p className="text-white text-lg font-bold cursor-pointer transition-colors duration-300 hover:text-red-500">Portfolio</p>
-                </Link>
-                <Link href="/contact">
-                    <p className="text-white text-lg font-bold cursor-pointer transition-colors duration-300 hover:text-red-500">Contact</p>
                 </Link>
             </nav>
             <button onClick={toggleMenu} className="md:hidden text-white focus:outline-none text-3xl">

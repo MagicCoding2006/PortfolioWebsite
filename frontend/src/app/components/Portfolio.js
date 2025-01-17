@@ -12,10 +12,34 @@ import InternshipApp from '../../../public/InternshipApp.png';
 import WebEditor from '../../../public/WebEditor.png';
 import CryptoSite from '../../../public/CryptoSite.png';
 import CoffeeSite from '../../../public/CoffeeSite.png';
+import CallAnalyzer from '../../../public/CallAnalyzer.png';
+import AITravelApp from '../../../public/AITravelApp.png';
+import VoiceCloneAI from '../../../public/VoiceCloneAI.png';
+import RAGimg from '../../../public/RAGimg.png';
 import Image from 'next/image';
 
 export default function Portfolio(){
     const projects = [
+        {
+            title: "AI call analyzer",
+            description: "A specialized AI-powered SaaS designed to enhance the performance of Sales Development Representatives (SDRs) by analyzing their calls and identifying areas for improvement. The platform also includes robust management features for team leads to oversee and optimize SDR performance. The solution is hosted securely in the cloud via Google Cloud Run (GCR).",
+            image: CallAnalyzer
+        },
+        {
+            title: "AI voice cloning tool",
+            description: "A machine learning tool that utilizes online training data to create models capable of replicating any input voice. This technology enables precise and versatile voice cloning for a variety of applications.",
+            image: VoiceCloneAI
+        },
+        {
+            title: "AI social media assistant",
+            description: "An advanced SaaS solution that employs web scraping to aggregate content from your social media accounts. The platform downloads videos, analyzes them frame by frame, examines engagement metrics and transcripts, and leverages Retrieval-Augmented Generation (RAG) with a Large Language Model (LLM) to facilitate interactive insights and suggestions based on your content.",
+            image: RAGimg
+        },
+        {
+            title: "AI travel app",
+            description: "An innovative travel application that integrates multiple tools to streamline the vacation booking process, reducing it to under 10 minutes. Leveraging web scraping, along with APIs for flights, hotels, and Google Console, this app provides a seamless and efficient booking experience.",
+            image: AITravelApp
+        },
         { 
             title: "Mindfulness Zone", 
             description: "An interactive web application designed to promote mindfulness and mental well-being through guided meditation, relaxation techniques, and stress management resources.", 
@@ -62,19 +86,9 @@ export default function Portfolio(){
             image: WebEditor 
         },
         { 
-            title: "Crypto Fund Transfering Website", 
-            description: "A secure and user-friendly website for transferring cryptocurrency funds, offering transaction tracking, wallet integration, and real-time exchange rates.", 
-            image: CryptoSite 
-        },
-        { 
             title: "AI Text Detector", 
             description: "An AI-powered application capable of detecting and analyzing text in images and documents, with features for text extraction and sentiment analysis.", 
             image: AITextDetector 
-        },
-        { 
-            title: "Coffee Shop Website", 
-            description: "A stylish and modern website for a coffee shop, featuring an online menu, ordering system, and information about the shop's locations and special events.", 
-            image: CoffeeSite 
         },
     ];    
     return (

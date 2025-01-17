@@ -11,9 +11,6 @@ export default function Footer() {
                     <h3 style={footerTitleStyle}>Contact Me</h3>
                     <p style={footerTextStyle}>Phone: +1 (317)-789-5564</p>
                     <p style={footerTextStyle}>Email: alexlotkov124@gmail.com</p>
-                    <Link href="https://calendly.com/alexlotkov/discovery">
-                        <p style={footerTextStyle} className='bg-red-700 p-2'>Book a meeting through my calendly</p>
-                    </Link>
                 </div>
                 <div style={socialSectionStyle}>
                     <h3 style={footerTitleStyle}>Follow Me</h3>
@@ -30,10 +27,7 @@ export default function Footer() {
                     <h3 style={footerTitleStyle}>Quick Links</h3>
                     <ul style={navListStyle}>
                         <li><Link href="/"><p style={footerLinkStyle}>Home</p></Link></li>
-                        <li><Link href="/services"><p style={footerLinkStyle}>Services</p></Link></li>
-                        <li><Link href="/about"><p style={footerLinkStyle}>About</p></Link></li>
                         <li><Link href="/portfolio"><p style={footerLinkStyle}>Portfolio</p></Link></li>
-                        <li><Link href="/contact"><p style={footerLinkStyle}>Contact</p></Link></li>
                     </ul>
                 </div>
             </div>
