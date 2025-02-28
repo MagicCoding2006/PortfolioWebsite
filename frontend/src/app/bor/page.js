@@ -1,6 +1,5 @@
 "use client"
 
-import { ExternalLink } from "lucide-react"
 import { useEffect } from "react"
 
 export default function BOR() {
@@ -413,45 +412,6 @@ export default function BOR() {
                       <span className="font-semibold">Investment Strategy:</span> Even lower-cost tools like SaneBox and
                       Genie.ai provide disproportionate value, reinforcing a smart investment in AI.
                     </li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Bibliography */}
-              <div className="border border-blue-200 rounded-lg shadow-sm overflow-hidden">
-                <div className="bg-blue-800 text-white py-4 px-6">
-                  <h3 className="text-xl font-semibold">Bibliography</h3>
-                </div>
-                <div className="p-6 bg-white">
-                  <ul className="space-y-2">
-                    {[
-                      {
-                        name: "Deal Machine: AI in Real Estate",
-                        url: "https://www.dealmachine.com/blog/ai-real-estate",
-                      },
-                      { name: "Warmly.ai", url: "https://warmly.ai" },
-                      { name: "SaneBox", url: "https://www.sanebox.com" },
-                      {
-                        name: "Builtin: AI in Real Estate",
-                        url: "https://builtin.com/artificial-intelligence/ai-real-estate",
-                      },
-                      {
-                        name: "Top Real Estate Virtual Tour Companies",
-                        url: "https://propertyspark.com/top-11-most-innovative-real-estate-virtual-tour-companies/",
-                      },
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-center">
-                        <ExternalLink className="h-4 w-4 text-blue-600 mr-2" />
-                        <a
-                          href={item.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-600 hover:text-blue-800 hover:underline"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
                   </ul>
                 </div>
               </div>
