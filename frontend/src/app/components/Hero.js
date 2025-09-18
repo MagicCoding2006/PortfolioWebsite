@@ -14,6 +14,11 @@ export default function Hero() {
                 <Link href="/portfolio">
                     <button className='bg-red-600 w-full lg:w-96 py-2 px-4 rounded-md text-white font-bold shadow-md hover:bg-red-700 transition-colors duration-300'>Portfolio</button>
                 </Link>
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <button className="bg-transparent border-2 border-red-600 w-full lg:w-96 py-2 px-4 rounded-md text-red-600 font-bold shadow-md hover:bg-red-600 hover:text-white transition-colors duration-300 mt-4">
+                        View Résumé
+                    </button>
+                </a>
             </div>
             <div className="flex-1 flex justify-center items-center animate-slideFadeInRight mt-8 lg:mt-0">
                 <Image

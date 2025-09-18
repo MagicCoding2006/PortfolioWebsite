@@ -28,6 +28,11 @@ export default function Header() {
                 <Link href="/">
                     <p className="text-white text-lg font-bold cursor-pointer transition-colors duration-300 hover:text-red-500">Home</p>
                 </Link>
+                <p className='text-white text-lg font-bold cursor-pointer transition-colors duration-300 hover:text-red-500'>
+                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                        View Résumé
+                    </a>
+                </p>
                 <Link href="/portfolio">
                     <p className="text-white text-lg font-bold cursor-pointer transition-colors duration-300 hover:text-red-500">Portfolio</p>
                 </Link>
@@ -42,12 +47,11 @@ export default function Header() {
                 <Link href="/">
                     <p onClick={toggleMenu} className="text-white text-2xl font-bold mb-4 cursor-pointer">Home</p>
                 </Link>
-                <Link href="/services">
-                    <p onClick={toggleMenu} className="text-white text-2xl font-bold mb-4 cursor-pointer">Services</p>
-                </Link>
-                <Link href="/about">
-                    <p onClick={toggleMenu} className="text-white text-2xl font-bold mb-4 cursor-pointer">About</p>
-                </Link>
+                <p className='text-white text-2xl font-bold mb-4 cursor-pointer'>
+                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                        View Résumé
+                    </a>
+                </p>
                 <Link href="/portfolio">
                     <p onClick={toggleMenu} className="text-white text-2xl font-bold mb-4 cursor-pointer">Portfolio</p>
                 </Link>
